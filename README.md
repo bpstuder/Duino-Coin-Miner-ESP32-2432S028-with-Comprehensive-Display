@@ -69,13 +69,14 @@ Ensure **only this line is enabled**:
 
 ```cpp
 #include <User_Setups/Setup_CYD_ESP32_2432S028_ILI9341.h>
+```
 All other #include <User_Setups/...> lines must remain commented out.
 
 CYD User Setup Reference
 The active setup file (Setup_CYD_ESP32_2432S028_ILI9341.h) should match:
 
-cpp
 Copy code
+```cpp
 #define USER_SETUP_INFO "CYD ESP32-2432S028 ILI9341"
 
 #define ILI9341_DRIVER
@@ -104,6 +105,9 @@ Copy code
 #define LOAD_FONT8
 #define LOAD_GFXFF
 #define SMOOTH_FONT
+
+```
+
 Build Environment
 Arduino IDE 2.x
 
@@ -111,11 +115,11 @@ ESP32 by Espressif — version 3.3.4
 
 Board: ESP32 Dev Module
 
-Flash Size: 4MB
+Flash Size: `4MB`
 
-Partition Scheme: any scheme that fits
+Partition Scheme: `any scheme that fits`
 
-PSRAM: enable only if supported by your board
+PSRAM: `enable only if supported by your board`
 
 Build & Flash
 Open the project in Arduino IDE.
