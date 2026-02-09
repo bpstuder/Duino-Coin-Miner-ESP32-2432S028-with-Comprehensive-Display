@@ -487,7 +487,7 @@ void RestartESP(String msg) {
 
     tft.setRotation(3);
     tft.writecommand(0x36);
-    tft.writedata(0x60);
+    tft.writedata(0xE8);
 
     tft.startWrite();
     tft.fillScreen(TFT_BLACK);
@@ -1039,7 +1039,7 @@ namespace {
     tft.writecommand(0x3A);        // COLMOD
     tft.writedata(0x55);           // 16-bit color
     tft.writecommand(0x36);        // MADCTL
-    tft.writedata(0x60);           // your CYD fix
+    tft.writedata(0xE8);           // your CYD fix
   }
 
   static inline void cyd_clear_bottom_gap() {
@@ -1890,3 +1890,4 @@ void loop() {
   #endif
   delay(10);
 }
+
